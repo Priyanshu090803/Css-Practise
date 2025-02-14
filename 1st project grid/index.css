@@ -13,4 +13,37 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: #ededed;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 50% 20% ;
+
+}
+.left-top-left{
+    padding: 30px;    
+    background-color: red;    
+}
+.left-top-right{
+    background-color: brown;
+}
+.left-center{
+    
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.left-bottom{
+    grid-column: 1/3;
+    background-color: pink;
+}
+.right{
+    grid-column: 3;
+    grid-row: 1/4;
+    background-color: green;
+}
+
+.square{
+    height: 15px;
+    width:  15px;
+    rotate: 45deg;
+    background-color: black;
 }
