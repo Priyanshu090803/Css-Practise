@@ -31,6 +31,18 @@ html,body{
     padding: 20px;
     cursor: pointer;
 }
+.left-top-right{
+    
+    font-size: 1.5rem;
+    justify-self:end;
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+}
+.left-top-right h5{
+    display: none;
+    font-size: 4rem;
+}
 .left-center{
     font-size: 4rem;    
     grid-column: 1/3;
@@ -113,25 +125,26 @@ html,body{
 
 
 @media (max-width:600px){
-    
+    /* html{
+        font-size: 50%;
+    } */
     .main{
-        height: 100%;
-        width: 100%;
-        display: grid;
+       
         grid-template-columns: 50% 50%;
         grid-template-rows: 10% 35% 15% 40% ;
     
     }
-    .left-top-left{
-        padding: 30px;    
-    }
-    .left-top-right{
+    
+    .left-top-right h3{
         display: none;
-        font-size: 1.5rem;
-        justify-self:end;
-        text-align: right;
-        padding: 20px;
-        cursor: pointer;
+        
+    }
+    .left-top-right h4{
+    display: none;
+    }
+    .left-top-right h5 {
+        display:initial;
+        font-size: 4rem;
     }
     .left-center{
         font-size: 2.8rem;    
@@ -150,21 +163,16 @@ html,body{
         padding: 1rem;
     }
     .left-bottom p{
-        width: 95%;
+        width: 85%;
     }
     
    
    
-    .left-top-right h3{
-        margin-bottom: 4rem;    
-        font-size:2.2rem;
-        font-weight: 500;
-    }
-   
+    
     .right{
         grid-column: 1/3;
         grid-row: 4;
-        padding: 2rem;
+        padding: 1rem;
         /* padding-right: 10rem; */
         display: flex;
         align-items: center;
@@ -172,10 +180,10 @@ html,body{
     }
     .arrow{
         position: absolute;
-        top: 76%;
-        left: 32%;
-        padding: 1rem;
-    
+        top: 57%;
+        left: 45%;
+        padding: .5rem;
+        rotate: 90deg;
     }
     
 }
