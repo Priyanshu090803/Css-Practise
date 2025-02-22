@@ -29,6 +29,7 @@ html,body{
 .header li{
     font-weight: 300;
     list-style: none;
+    cursor: pointer;
 }
 .header li i{
     font-weight: 600;
@@ -65,10 +66,30 @@ html,body{
 .elem{
     padding: 2rem 0;
     border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
 }
 
 .elem a{
     color: black;
     text-decoration: none;
     font-size: 2rem;
+}
+.elem i{
+    font-size: 2rem;
+    opacity: 0;
+}
+.elem a:hover{
+    text-decoration: underline;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.image{
+    height:50%;
+    width: 100%;
+    background-color: rebeccapurple;
+    background-image: url(https://imgs.search.brave.com/-GUesJ3OW2Pv9OtRhohmUtKOXTx8VShNiV34AqX4HfE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL2c2/N1dTeXZuSUg0RWtu/S2RJVGx3WkhrSF80/ZkY4dHAwbHRzMHhT/bHBxaE9oV1JDX2lR/STVnNHRmYjFDRFBx/TFdkV1oyZW5hREU5/R0ZpU3p3bk5BUy10/NXo4UDE3M25jR0Rr/Sm1qWERReXMxS2N4/bDVsZz1oNjAw);
+    background-size: cover;
+    background-position: 0 25%;
 }
