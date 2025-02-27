@@ -26,12 +26,13 @@ html,body{
     align-items: center;
     padding: 0 2rem;
 }
-.header li{
+.header h4{
     font-weight: 300;
     list-style: none;
     cursor: pointer;
 }
-.header li i{
+.ri-shopping-bag-line{
+    margin-top: 1.5rem;
     font-weight: 600;
     padding: .7rem;    
     border-radius: 50%;
@@ -39,7 +40,14 @@ html,body{
     color: white;
     background-color: black;
 }
+.ri-menu-fill{
+    display: none;
+}
+
+
+
 .center{
+    margin-top: 1rem;
     height: 70%;
     width: 100%;
     padding: 4rem 6rem;
@@ -92,4 +100,60 @@ html,body{
     background-image: url(https://imgs.search.brave.com/-GUesJ3OW2Pv9OtRhohmUtKOXTx8VShNiV34AqX4HfE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tL2c2/N1dTeXZuSUg0RWtu/S2RJVGx3WkhrSF80/ZkY4dHAwbHRzMHhT/bHBxaE9oV1JDX2lR/STVnNHRmYjFDRFBx/TFdkV1oyZW5hREU5/R0ZpU3p3bk5BUy10/NXo4UDE3M25jR0Rr/Sm1qWERReXMxS2N4/bDVsZz1oNjAw);
     background-size: cover;
     background-position: 0 25%;
+}
+
+@media (max-width:600px){
+    .header{
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+    .header h4{
+        display: none;
+    }
+    .ri-menu-fill{
+       margin-top: 1.5rem;
+        font-size: 2.5rem;
+        display: initial;
+    }
+    
+
+    .center{
+        border: 2px solid black;
+        
+        height: 50%;
+        padding: 2rem 3rem;
+    }
+    .center h1{
+        font-weight: 300;
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+    .center-in{
+        border: 2px solid black;
+        height: 20rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .center-in p{
+        line-height: 2rem;
+        font-size: 1.8rem;
+    }
+
+
+    
+.right{
+    width: 20%;
+    border-top: 2px solid black;
+
+}
+
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.elem i{
+    font-size: 2rem;
+    opacity: 0;
+}
 }
