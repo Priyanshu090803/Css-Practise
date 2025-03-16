@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+}
+.logo{
+    height: 8rem;
+    width: 8rem;
+}
+.logo a img{
+    height: 100%;
+    width:  100%;
+}
+.navbar{
+    display: flex;
+    font-size: 2rem;
+    gap: 3rem;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* hero */
+.hero{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(119, 236, 96, 0.408);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.content{
+    height: 50%;
+    width: 40%;
+    margin: 10rem 0 0 10rem;
+    padding: 5rem;
+}
+.content h3{
+    font-size: 1.7rem;
+    margin: 2rem 0 2rem 0;
+}
+.content h3:nth-child(1){
+    font-size: 2rem;
+    color: rgb(128, 122, 122);
+}
+.content p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+.content button{
+    height: 4rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    background-color: rgba(0, 27, 199, 0.775);
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: rgb(25, 11, 151);
+}
+.dummy-img{
+    height: 90%;
+    width: 50%;
+    padding: 5rem;
+}
+.dummy-img img{
+    height: 100%;
+    width: 100%;
+}
