@@ -17,6 +17,10 @@ h5,
 h6{
     font-family: "Poppins", sans-serif;
 }
+.main{
+    height: 100%;
+    width: 100%;
+}
 .container{
     height: 8rem;
     width: 100%;
@@ -32,6 +36,7 @@ h6{
     height: 100%;
     width:  100%;
 }
+
 .navbar{
     display: flex;
     font-size: 2rem;
@@ -45,12 +50,18 @@ h6{
     text-decoration: none;
     color: black;
 }
+.navbar li a:active{
+    color: rgb(236, 21, 21);
+}
+.navbar li a:hover{
+    color: rgb(21, 157, 236);
+}
 
 /* hero */
 .hero{
-    height: 100%;
+    height: 87%;
     width: 100%;
-    background-color: rgba(119, 236, 96, 0.408);
+    background:  linear-gradient(45deg ,rgb(171, 223, 210),rgb(116, 151, 232));
     border-radius: 2rem;
     display: flex;
     justify-content: space-between;
@@ -66,9 +77,16 @@ h6{
     font-size: 1.7rem;
     margin: 2rem 0 2rem 0;
 }
+.content h3:hover{
+    color: rgb(70, 66, 66);
+}
 .content h3:nth-child(1){
     font-size: 2rem;
     color: rgb(128, 122, 122);
+}
+.content h3:nth-child(1):hover{
+    font-size: 2rem;
+    color: rgb(111, 69, 69);
 }
 .content p{
     padding-top: 1rem;
@@ -90,11 +108,45 @@ h6{
     background-color: rgb(25, 11, 151);
 }
 .dummy-img{
-    height: 90%;
-    width: 50%;
+    height: 50rem;
+    width: 45rem;
     padding: 5rem;
+    margin: 5rem 10rem 0 0 ;
+}
+.dummy-img:hover{
+    height: 52rem;
+    width: 46rem;
+    transition: all ease-in-out 2s;
+    margin: 4rem 9rem 0 0 ;
 }
 .dummy-img img{
+    height: 100%;
+    width: 100%;
+}
+.custom-shape-divider-bottom-1742387002 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1742387002 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 93px;
+}
+
+.custom-shape-divider-bottom-1742387002 .shape-fill {
+    fill: #ffffff;
+}
+
+
+
+.hero2{
     height: 100%;
     width: 100%;
 }
