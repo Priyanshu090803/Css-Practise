@@ -57,6 +57,14 @@ h6{
     color: rgb(21, 157, 236);
 }
 
+
+.navbar i{
+    /* opacity: 0; */
+    display: none;
+}
+
+
+
 /* hero */
 .hero{
     height: 87%;
@@ -149,4 +157,19 @@ h6{
 .hero2{
     height: 100%;
     width: 100%;
+}
+
+@media (max-width:390px){
+    .navbar i{
+        /* opacity: 0; */
+        display: initial;
+    }
+    .navbar ul{
+       width: 100%;
+       flex-direction: column;
+    }
+    
+
+
+
 }
