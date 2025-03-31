@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --primary-color:#11121a;
     --hover-color: #272832;
@@ -22,6 +22,8 @@ html,body{
 nav{
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--hover-color);
+    padding: 1rem;
+    position:  relative;
 }
 nav li{
     display: flex;
@@ -50,14 +52,23 @@ nav a.active-link{
 nav a.accent-link{
     background-color: var(--accent-color);
 }
-
+nav i{
+    color: var(--text-color);
+    font-size: 3.8rem;
+    display: none;
+    
+}
+h1{
+    font-size: 4rem;
+    color: var(--text-color);
+}
 @media(max-width: 700px){
     nav{
         position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
-        width: min(15em, 100%);
+        width: min(17em, 100%);
         z-index: 10;
         border-left: 1px solid var(--hover-color);
     }
@@ -66,8 +77,12 @@ nav a.accent-link{
         flex-direction: column;
     }
     nav a{
+        display: none;
         width: 100%;
         padding-left: 2.5em;
+        font-size: 1.3rem;
+        border-radius: 2px;
+
     }
     nav a.active-link{
         border-bottom: none;
@@ -75,4 +90,122 @@ nav a.accent-link{
     nav .home-li{
         margin-right: unset;
     }
+    nav i{
+        display: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+} */
+
+
+/* Reset & Root Variables */
+:root {
+    --primary-color: #11121a;
+    --hover-color: #272832;
+    --accent-color: #0071FF;
+    --text-color: #c9c9c9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--hover-color);
+    padding: 1rem;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+}
+
+nav a.active-link {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.hamburgur {
+    display: none;
+    font-size: 3.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: min(17em, 100%);
+        background-color: var(--primary-color);
+        transition: right 0.3s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .hamburgur {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    nav.active .nav-link {
+        display: block;
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+    padding: 2rem;
 }
