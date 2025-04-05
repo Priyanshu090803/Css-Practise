@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 252, 252);
+
+}
+.nav{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.content{
+    height: calc(100% - 120px);
+    width: 100%;
+}
+.nav-part1{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.nav-part1 h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.nav-part1 h4:active{
+    color: rgb(181, 181, 244);
+}
+.logo_img{
+    height: 110px;    
+    cursor: pointer;
+
+}
+.nav-part2{
+    width: 25%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    cursor: pointer;
+
+}
+.nav-part2 button{
+    border-radius: 60px;
+    font-size: 18px;
+    padding: 12px 22px;
+    font-weight: 700;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: .2rem;
+    cursor: pointer;
+    
+}
+.nav-part2 button:active{
+    color: rgb(186, 184, 196);
+}
+.nav-part2 button:nth-child(1){
+    background-color: rgba(218, 216, 212, 0.555);
+    color: rgb(38, 36, 36);
+    cursor: pointer;
+}
+.nav-part2 button:nth-child(1):active{
+    color: rgb(178, 176, 185);
+
+}
